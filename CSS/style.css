@@ -1,3 +1,89 @@
+body{
+    background-color: #000;
+}
+
+header{
+    height: 100vh;
+    background-color: #000;    
+}
+
 p{
     font-family:"Roboto Flex", sans-serif;
+}
+
+ul li a{
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    line-height: 15px;
+}
+
+.navbar-color{
+    background-color: #ffae00;
+}
+
+.navbar-center a{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-item-left p{
+    color:#fff;
+    margin: 0 0 0 20px; 
+}
+
+.nav-item-center a{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    margin: 10px;
+}
+
+.nav-item-right{
+    display: block;
+    justify-content: right;
+    align-items: right;
+    text-align: right;
+}
+
+a i{
+    color: #fff;
+}
+
+.header{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.head img{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    width: 500px;
+    height: auto;
+    padding: 2rem 0 2rem 0;
+}
+
+.head p{
+    justify-content: center;
+    align-items: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 70px;
+    line-height: 80px;
+    color: #fff;
+    padding: 20px;
 }
