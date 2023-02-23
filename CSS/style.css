@@ -80,21 +80,57 @@ a i{
 .title{
     color: white;
     font-family: 'Anton', sans-serif;
-    font-size: 60px;
-    line-height: 75px;
+    font-size: 70px;
+    line-height: 80px;
     font-weight: bold;
     letter-spacing: 1px;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 5px;
     padding-top: 10px;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
 }
 
 .title2{
     font-family: 'Anton', sans-serif;
-    font-size: 35px;
-    line-height: 40px;
+    font-size: 40px;
+    line-height: 45px;
     margin-bottom: 10px;
     color:#ffae00;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .3s;
+}
+
+.title3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 40px;
+    margin-top: 30px;
+    padding: 1px;
+    color:#fff;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+}
+
+.title4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 40px;
+    margin: 10px;
+    padding: 1px;
+    color:#fff;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+}
+
+/* cambia el color cuando pasamos el cursor sobre el elemento */
+.title4:hover{
+    color: #ffae00;
 }
 
 .head img{
@@ -105,6 +141,8 @@ a i{
     width: 400px;
     height: auto;
     padding: 2rem 0 2rem 0;
+    opacity: 0;
+    animation: slideRight 3s ease forwards;
     /*animation: shadow 4s 1;*/
 }
 
@@ -121,11 +159,18 @@ a i{
 
 .head p{
     font-family:'Inter', sans-serif;
-    font-size: 16px;
-    line-height: 20px;
-    margin: 40px 20px 50px 20px;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 30px 20px 10px;
     color: #fff;
-    /*animation: shadow 4s 1;*/
+    padding: 10px;
+    border: solid 3px #ffae00;
+    border-radius: 10px;
+    animation: shadow 3s 1;
+}
+
+.head p i{
+    color: #ffae00;
 }
 
 .head a i{
@@ -154,7 +199,10 @@ a i{
     text-align: center;
     width: 70px;
     height: 60px;
+    opacity: 0;
     transition: transform .3s;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
 }
 
 .gridcard > article:hover{
@@ -169,6 +217,7 @@ a i{
     color: #ffae00;
 }
 */
+
 .hh{
     text-align: center;
     position: absolute;
@@ -212,7 +261,7 @@ a i{
     font-size: 30px;    
     color:#ffae00;
     margin-bottom: 10px;
-    animation: shadow 4.3s 1;
+    /* animation: shadow 4.3s 1; */
 }
 
 @keyframes text{
@@ -245,16 +294,51 @@ a i{
 
 @keyframes shadow {
     0%{
-        background-color: #000;
-        opacity: 0%;
+
+        opacity: 0;
     }
-    50%{ 
-        opacity: 0%;
+
+    50%{
+        opacity: 0;
     }
-    85%{
-        opacity: 0%;
-    }
+
     100%{
-        opacity: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
     }
 }
