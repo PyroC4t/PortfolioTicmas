@@ -16,6 +16,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800;900&display=swap" rel="stylesheet">
+    <style>
+      body{
+        background-color: #000;
+      }
+    </style>
   </head>
 
 <body>
@@ -36,7 +41,10 @@
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="#">Información personal</a>
+                <a class="nav-link" href="#Home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#AcercaDeMi">Acerca de mi</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Educación</a>
@@ -59,7 +67,7 @@
     </nav>
 
     <header>
-      <div class="container">
+      <div class="container" id="Home">
         <div class="row header">
           <div class="head col-lg-7">
             <span class="titleC">¡Hola, bienvenido!</span>
@@ -91,6 +99,48 @@
         </div>
       </div>
     </header>
+
+    <!-- seccion Info -->
+
+    <section id="AcercaDeMi">
+      <div class="container">
+        <div class="cardbox">
+          <div class="side-box">
+            <div class="left info">
+              <span>mi portfolio</span>
+              <h4>Acerca de mi</h4>
+              <h6>diseñador & desarrollador</h6>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+                text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              <h5>¡conoce mis redes!</h5>
+  
+              <div class="gridcardIcon d-flex">
+                <article>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                </article>
+                <article>
+                  <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f fa-2xl"></i></a>
+                </article>
+                <article>
+                  <a href="https://twitter.com/"><i class="fa-brands fa-twitter fa-2xl"></i></a>
+                </article>
+                <article>
+                    <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in fa-2xl"></i></a>
+                </article>
+                <article>
+                  <a href="https://github.com/"><i class="fa-brands fa-github fa-2xl"></i></a>
+                </article>
+              </div>
+            </div>
+    
+            <div class="right info flex">
+              <img src="images/perfil2.png" alt="foto perfil">
+            </div>
+  
+          </div>
+        </div>
+      </div>
+    </section>
 
 </body>
 </html>
