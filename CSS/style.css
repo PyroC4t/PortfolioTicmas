@@ -205,34 +205,6 @@ a i{
     }
 }
 
-@keyframes moving {
-    0%{
-        left: 0; top: 0;
-    }
-    50%{
-        left: -200px; top: 0;
-    }
-    100%{
-        left: -200px; top:0;
-    }
-    
-}
-
-@keyframes shadow {
-    0%{
-
-        opacity: 0;
-    }
-
-    50%{
-        opacity: 0;
-    }
-
-    100%{
-        opacity: 1;
-    }
-}
-
 @keyframes slideRight {
     0% {
         transform: translateX(-100px);
