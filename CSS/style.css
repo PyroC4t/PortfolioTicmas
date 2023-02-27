@@ -432,4 +432,124 @@ a i{
     .info h6{
         text-align: center;
     }
+    .coso{
+        display: inline;
+    }
+}
+
+/* estilo seccion Skills */
+
+.skillSection{
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.titleSection h2{
+    font-family: 'Anton', sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffae00;
+    font-size: 40px;
+    margin: 10px;
+    padding: 10px 20px
+}
+
+.titleSection h2:hover{
+    animation: text 3s 1;
+}
+
+.cards-skills{
+    background-color: #ffae00;
+    max-width: 100%;
+    width: 100;
+    height: auto;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 1rem 1rem;
+}
+
+.titles-skill span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 25px;
+    color: #fff;
+    text-align: start;
+    padding: 5px 80px 5px 25px;
+    margin:0 0 0 -12px;
+    background-color: #000;
+}
+
+.titles-skill:hover{
+    animation: slideRight 1s ease forwards;
+}
+
+.flex-skillpb {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem 0.5rem;
+}
+
+.iconskill img {
+    margin-bottom:-25px;
+    width: 60px;
+    height: 60px;
+}
+
+.skills {
+    width: 100%;
+    max-width: 100;
+    padding: 0 20px;
+}
+
+.skill-name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;   
+    color: #ffffff;
+    margin: 10px 5px;
+    padding-top: 0.5rem;
+}
+
+.skill-name span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;   
+    color: #ffffff;
+    margin: 10px 0;
+    padding: 5px 30px 5px 10px;
+    background-color: #000;
+}
+
+.skill-bar {
+    position: relative;
+    height: 18px;
+    background: #ffffff;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    box-shadow: inset 0px 4px 2px rgba(0,0,0,0.5),
+                      0px 2px rgba(255,255,255,0.8);
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+.skill-per {
+    height: 20px;
+    background: #000;
+    border-radius: 10px;
+    position: relative;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 2s 2s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+@keyframes animate {
+    100%{
+        transform: scaleX(1);
+    }
 }
