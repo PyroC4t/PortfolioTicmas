@@ -18,7 +18,7 @@ p{
 
 ul li a{
     font-family: 'Anton', sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
     line-height: 15px;
 }
@@ -60,7 +60,7 @@ a i{
 }
 
 .header{
-    display: block;
+    display: flex;
     min-height: 100vh;
     justify-content: center;
     align-items: center;
@@ -202,6 +202,18 @@ a i{
     }
     85%{
         letter-spacing: 5px;
+    }
+}
+
+@keyframes shadow{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
     }
 }
 
@@ -457,7 +469,7 @@ a i{
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
-    margin: 30px 0;
+    margin: 30px 0 60px;
 }
 
 .services-container .services-box{
@@ -534,7 +546,7 @@ a i{
     width: 100;
     height: auto;
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 25px;
     margin: 1rem 1rem;
 }
 
@@ -554,8 +566,10 @@ a i{
     color: #fff;
     text-align: start;
     padding: 10px 80px 10px 25px;
-    margin:0 0 0 -12px;
+    margin:0 0 0 -25px;
     background-color: #000;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
 }
 
 .titles-skill button{
@@ -584,6 +598,9 @@ a i{
     margin-bottom:-25px;
     width: 60px;
     height: 60px;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
 }
 
 .skills {
@@ -611,6 +628,7 @@ a i{
     margin: 10px 0;
     padding: 5px 30px 5px 10px;
     background-color: #000;
+    animation: slideTop 2s ease forwards;
 }
 
 .skill-bar {
@@ -644,7 +662,11 @@ a i{
 @media screen and (max-width: 430px){
     .titles-skill h5{
         font-size: 20px;
-        padding: 13px 25px;
+        padding: 13px 15px;
+        margin: 0 0 0 -10px
+    }
+    .cards-skills{
+        padding: 30px 10px;
     }
 }
 
